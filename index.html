@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>class</title>
+</head>
+<body>
+  <h1>Class Constructor</h1>
+<script>
+   
+     <!-------------------1---------------------->
+	
+   class Person{
+  constructor(name, age, country) {
+    this.name = name;
+    this.age = age;
+    this.country = country;
+  }
+
+  displayDetails() {
+  console.log(`i am ${this,name} age is ${this,age} from ${this,country}`)
+  }
+ }
+  let use1=new person("tamil",22,"india");
+  let use2=new person("nanthu",23,"paris");
+  use1.display();
+  use2.display();
+  
+ output:
+        ["i am tamil and my age is 22 from india"
+		"i am nanthu and my age is 23 from paris"]
+  
+     <!-------------------2---------------------->
+    
+    class Rectangle{
+    constructor(height,weight){
+    this.height=height;
+    this.width=width;
+    }
+    area(){
+    let a=this.height*this.width;
+    console.log(`Area of a Rectangle:${a}`);
+    }
+    perimeter(){
+    let p=2*(this.height+this.width);	
+	console.log(`Perimetr of a Rectangle:${p}`);
+    }
+    }
+    let doc=new Rectangle(12,10);
+    doc.area();
+	doc.perimeter();
+	
+	output:
+	       ["Rectangle Area: 120"
+           "Rectangle Perimeter: 44"]
+		   
+		   
+     <!-------------------3---------------------->
+	 
+     	class Bankaccount{
+		constructor(accountno,balance){
+		this.accountno.accountno;
+		this.balance=balance;
+		}
+		deposite(a){
+		let deposite=this.bal+a;
+		console.log(`Account Number:${this.accounno}$(this.balance}`);
+		onsole.log(`your current Accbalance:${dep}`);
+		}
+		withdraw(value){
+		let wid=this.balance-value;
+		console.log(`you have withdrawal ${value} current Accbalance:${dep}`);
+		}
+		}
+		let ans=new BankAccount(123,2000);
+		let ans2=new BankAccount(1234,1000);
+		ans.deposit(500);
+		ans.withdraw(400);
+		ans.deposit(1800);
+		ans.withdraw(200);
+		
+	output:
+           ["Account No.: 123"
+            "you have widthdrawal: $1500"
+            "Deposited: $500"
+            "Withdrawn: $400"
+            "Account Balance: $1600"
+            "Want to withdrawn: $1800"
+            "your current Accbalance:2000;
+			"you have withdrawal current Accbalance:1600"]
+			
+           <!-------------------4----------------------> 
+		   
+		   class Circle extends Shape {
+           constructor() {
+           this.leangth = leangth;
+           }
+		   area(){
+		   console.log("area not defined")
+		   }
+		   }
+		   class Circle extends Shape{
+		   constructor(radius){
+		    super()
+			this.radius=radius;
+		}
+		 area(){
+            
+           let ra=3.14*this.radius*this.radius
+           console.log(`Area of circle ${a}`)
+           }
+           }
+           class Triangle extends shape{
+   		   constructor(e,h){
+		     super()
+			 this.e=e;
+			 this.h=h;
+		 }
+		  area(){
+		  
+			   let triangle=0.5*this.e*this.h;
+               console.log(`Area of Triangle ${tri}`)
+			   }
+			   }
+			   let red=new Circle(20);
+			   red.area();
+			   
+		output:
+               ["Area of circle 314"
+               "Area of Triangle 100"]
+			   
+	  <!-------------------5---------------------->
+	  
+	    class Employee{
+		constructor(name,salary){
+		this.name=name;
+		this.salary=salary;
+		}
+		ans(){
+		console.log(`Employee Name:${this.name},salary:${this.salary}`)
+		}
+		}
+		class Manager extends Employee{
+		constructor(name,salary,department){
+		super(name,salary)
+		this.department=department;
+		
+		}
+		ansa1(){
+		let bon=this.salary+5000;
+		console.log(`Employee Name:${this.name} from${this.department} department ,salary:${bon}`);
+		}
+		}
+		let employee=new Manager("Tamil",20000,"Front-End");
+		let employee=new Manager("Nanthu",60000,"Back-End");
+		emp.ansa1();
+		emp.ansa1();
+		
+      output:
+            ["Employee Name:Tamil from Front-End department ,Salary:25000"	  
+		     "Employee Name:Nanthu from Back-End-End department ,Salary:65000"]	
+	                      
+		   
+			 <!-------------------6---------------------->
+			 
+			 class Book{
+			 Constructor(title,author,publicationyear){
+			 this.title=title;
+			 this.author=author;
+			 this.publicationyear=publicationyear;
+			 }
+			 display1(){
+			 console.log(`${this.title},${this,author},${this.publicationyear}`);
+			 }
+			 }
+			 class book extends Book{
+			 Constructor(title,author,publicationyear,price){
+			 super(title,author,publicationyear)
+			 this.price=price;
+			 }
+			 display(){
+			 console.log(`${this.title},${this,author},${this.publicationyear},${this.price}`);
+			 }
+			 }
+			 let book1=new book("TTT","nnn",2022,120);
+			 let book2=new book("PPP","ddd",2023,250);
+			 book1.display();
+			 book2.display();
+			 
+		output:
+         	 ["TTT","nnn",2022,120
+			   "PPP","ddd",2023,250]
+			    
+		<!----------------------------------------->		
